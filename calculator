@@ -1,0 +1,29 @@
+#creating a calculator using function and switch cases
+from email.policy import default
+
+import switch as switch
+import switcher as switcher
+
+
+def add(x,y):
+   return (x+y)
+def sub(x,y):
+    return (x-y)
+def mul(x,y):
+    return (x*y)
+def div(x,y):
+    return (x//y)
+
+
+ch=(int)(input("enter your choice"))
+print("1-additon")
+print("2-substraction")
+print("3-multiplication")
+print("4-division")
+switcher={
+    1:add(10,5)
+    2:sub(20,10)
+    3:mul(20,20)
+    4:div(6,3)
+    default:print("Invalid Choice")
+}
