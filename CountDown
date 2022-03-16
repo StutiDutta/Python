@@ -1,0 +1,23 @@
+import time
+
+#function for countdown
+def countdown(t):
+    while t:
+        mins, secs = divmod(t, 60)
+        hrs, mins = divmod(mins, 60)
+        timer = '{:02d}:{:02d}:{:02d}'.format(hrs,mins,secs)
+        print(timer, end="\r")
+        time.sleep(1)
+        t=t-1
+        
+    print('TIME''s UP')
+
+#input time
+print("Welcome!so come lets set your goal")
+
+goal=input('Enter your goal   ')
+
+t=int(input('Enter your time   '))
+
+#call of function
+countdown(int(t))
