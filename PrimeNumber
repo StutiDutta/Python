@@ -1,0 +1,13 @@
+#check prime or composite using if elif
+n=(int)(input("enter\n"))
+c=0
+for i in range (2,n):
+    if(n%i==0):
+        c=1
+        break
+if(c==1):
+    print("composite number")
+elif(c==0):
+    print("prime number")
+else:
+    print("neither prime nor composite")
