@@ -1,0 +1,11 @@
+#checking perfect number
+n=(int)(input("enter\n"))
+num=n
+c=0
+for i in range (1,num):
+    if(num%i==0):
+        c=c+i #calculating sum
+if(n==c):
+    print("perfect number")
+else:
+    print("not a perfect number")
