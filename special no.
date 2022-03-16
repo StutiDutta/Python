@@ -1,0 +1,23 @@
+#check special number using function
+#fuction fact to calculate factorial
+def fact(n):
+    f=1
+    i=n
+    while i>=1:
+        f=f*i
+        i=i-1
+    return f
+#now main method program
+num=int(input("enter number"))
+temp=num
+s=0
+while temp>0:
+    r=temp%10
+    s=s+(fact(r))
+    temp=temp//10
+if (num==s):
+    print("yes")
+else:
+    print("no")
+
+
