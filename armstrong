@@ -1,0 +1,11 @@
+n=(int)(input("enter\n"))
+s=0
+num=n
+while num>0:
+    r=num%10
+    s=s+(r**3)
+    num=num//10
+if(s==n):
+    print("yes")
+else:
+    print("no")
